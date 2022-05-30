@@ -21,11 +21,11 @@ const Product = () => {
       "content-type":"application/json"
     },
     body:JSON.stringify({
-      title:newPro,
-      category:newPro,
-      gender:newPro,
-      imageSrc:newPro,
-      price:newPro
+      title:setPro,
+      category:setPro,
+      gender:setPro,
+      imageSrc:setPro,
+      price:setPro
       })
   })
   .then((r)=>{ 

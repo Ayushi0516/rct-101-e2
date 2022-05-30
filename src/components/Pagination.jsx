@@ -19,11 +19,11 @@ const Pagination = () => {
       "content-type":"application/json"
     },
     body:JSON.stringify({
-      title:newPro,
-      category:newPro,
-      gender:newPro,
-      imageSrc:newPro,
-      price:newPro
+      title:setPro,
+      category:setPro,
+      gender:setPro,
+      imageSrc:setPro,
+      price:setPro
       })
   })
   .then((r)=>{ 
@@ -40,7 +40,7 @@ const Pagination = () => {
       axios
         .get(`http://localhost:8080/products?_page=${page}&_limit=${limit}`)
         .then((r) => {
-          setTodos(r.data);
+          setPro(r.data);
           setTotalCount(+r.headers["x-total-count"]);
         });
     }, 1000);  
